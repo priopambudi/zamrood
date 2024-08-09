@@ -20,6 +20,9 @@ const Hero = () => {
         className="absolute h-full w-full z-0 object-cover"
       />
       <Container className="hero-description absolute inset-x-0 py-52 w-full max-w-7xl mx-auto text-center lg:text-left">
+        <h2 className="font-the-signature text-gold text-[86px] w-max text-center md:text-left whitespace-nowrap -mb-11">
+          Premium Travel
+        </h2>
         <h2 className="font-unbounded text-primary-text font-bold text-2xl md:text-5xl text-center md:text-left">
           Beyond Expectation
         </h2>

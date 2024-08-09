@@ -15,7 +15,10 @@ const galleries = [
 const Gallery = () => {
   return (
     <section id="gallery" className="py-14 bg-gold">
-      <div className="container px-4 sm:px-6 mx-auto hidden md:block">
+      <div className="container px-4 sm:px-6 mx-auto">
+        <h1 className="font-the-signature text-[52px] lg:text-[72px] text-secondary-text">
+          Luxury Footages
+        </h1>
         <div className="grid grid-cols-3 gap-6">
           {galleries.map((img: string, indx) => (
             <React.Fragment key={indx}>

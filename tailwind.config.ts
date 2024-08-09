@@ -20,6 +20,7 @@ const config: Config = {
       fontFamily: {
         albertSans: ["Albert Sans", "sans-serif"],
         unbounded: ["Unbounded", "sans-serif"],
+        "the-signature": ["Thesignature", "sans-serif"],
       },
       spacing: {
         custom: "72px",

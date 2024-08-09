@@ -11,6 +11,9 @@ const Priority = () => {
   return (
     <section id="priority" className="container px-4 sm:px-6 mx-auto">
       <div className="mt-custom">
+        <h1 className="font-the-signature text-secondary-text text-[54px] lg:text-[85px] text-center -mb-7">
+          Beyond Premium
+        </h1>
         <h2 className="font-unbounded text-xl md:text-3xl font-bold text-center uppercase text-secondary-text">
           Elevate your experience
         </h2>
