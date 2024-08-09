@@ -18,11 +18,11 @@ const Gallery = () => {
       <div className="container px-4 sm:px-6 mx-auto hidden md:block">
         <div className="grid grid-cols-3 gap-6">
           {galleries.map((img: string, indx) => (
-            <React.Fragment key={img}>
+            <React.Fragment key={indx}>
               {indx === 3 && (
                 <Separator.white alt="Zamrood" className="col-span-full" />
               )}
-              <div className="min-h-[350px] cursor-pointer" key={img}>
+              <div className="aspect-square cursor-pointer" key={img}>
                 <Image
                   src={img}
                   alt="Zamrood"

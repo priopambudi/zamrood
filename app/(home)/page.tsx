@@ -1,6 +1,8 @@
+import Articles from "@/components/Articles";
 import Destination from "@/components/Destination";
 import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
+import MiniBanner from "@/components/MiniBanner";
 import Service from "@/components/Service";
 import React from "react";
 
@@ -11,6 +13,8 @@ const Home = () => {
       <Service />
       <Destination />
       <Gallery />
+      <MiniBanner />
+      <Articles />
     </div>
   );
 };
