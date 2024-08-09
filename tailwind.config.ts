@@ -10,10 +10,17 @@ const config: Config = {
     extend: {
       colors: {
         background: "rgba(var(--background))",
+        foreground: "rgba(var(--foreground))",
         "primary-text": "rgba(var(--primary-text))",
+        "secondary-text": "rgba(var(--secondary-text))",
+        "tertiary-text": "rgba(var(--tertiary-text))",
       },
       fontFamily: {
         albertSans: ["Albert Sans", "sans-serif"],
+        unbounded: ["Unbounded", "sans-serif"],
+      },
+      spacing: {
+        custom: "72px",
       },
     },
   },

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Unbounded } from "next/font/google";
+import { Albert_Sans, Unbounded } from "next/font/google";
 import "./globals.css";
 
-const unbounded = Unbounded({
+const unbounded = Albert_Sans({
   subsets: ["latin"],
   weight: ["200", "400", "700", "900"], // Specify the weights you want to use
 });

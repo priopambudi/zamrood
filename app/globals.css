@@ -1,21 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap");
-
-body {
-  font-family: "Albert Sans";
-}
-
 :root {
   --background: 0, 0, 0;
+  --foreground: 255, 255, 255;
 
   --primary-text: 255, 255, 255;
+  --secondary-text: 0, 64, 64;
+  --tertiary-text: 11, 115, 115;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: 255, 255, 255;
   }
-}
+} */
