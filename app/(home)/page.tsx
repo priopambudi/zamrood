@@ -1,4 +1,5 @@
 import Destination from "@/components/Destination";
+import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import Service from "@/components/Service";
 import React from "react";
@@ -9,6 +10,7 @@ const Home = () => {
       <Hero />
       <Service />
       <Destination />
+      <Gallery />
     </div>
   );
 };

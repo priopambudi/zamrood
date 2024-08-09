@@ -23,7 +23,7 @@ export const Separator = {
   ),
   white: ({ alt, width, height, className }: separatorPorps) => (
     <Image
-      src={colorseparator}
+      src={whiteseparator}
       alt={alt}
       width={width}
       height={height}

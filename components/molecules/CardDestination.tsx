@@ -37,8 +37,8 @@ export const CardDestination = {
             <Image
               src={image}
               alt={title}
-              width={100}
-              height={100}
+              width={500}
+              height={300}
               className="w-full h-full object-cover"
             />
           </div>
@@ -88,8 +88,8 @@ export const CardDestination = {
             <Image
               src={image}
               alt={title}
-              width={100}
-              height={100}
+              width={500}
+              height={300}
               className="w-full h-full object-cover"
             />
           </div>
@@ -104,8 +104,8 @@ export const CardDestination = {
         <Image
           src={image}
           alt={title}
-          width={100}
-          height={100}
+          width={500}
+          height={300}
           className="w-full h-full object-cover"
         />
       </div>

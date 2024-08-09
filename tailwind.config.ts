@@ -15,6 +15,7 @@ const config: Config = {
         "secondary-text": "rgba(var(--secondary-text))",
         "tertiary-text": "rgba(var(--tertiary-text))",
         "muted-text": "rgba(var(--muted-text))",
+        gold: "rgba(var(--gold))",
       },
       fontFamily: {
         albertSans: ["Albert Sans", "sans-serif"],
