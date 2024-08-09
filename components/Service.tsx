@@ -36,7 +36,7 @@ const Priority = () => {
             <h3 className="font-unbounded text-secondary-text font-bold text-2xl px-6 text-center md:text-3xl md:text-start md:px-0 md:w-max">
               Discover Tailored Experiences
             </h3>
-            <p className="font-normal text-background text-center md:text-start md:my-2 md:w-11/12">
+            <p className="font-normal text-center md:text-start md:my-2 md:w-11/12">
               Create your own journey, personalized to suit your preferences and
               interests, ensuring a once-in-a-lifetime adventure awaits.
             </p>

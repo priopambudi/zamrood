@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Albert_Sans, Unbounded } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/molecules/Footer";
+import Navbar from "@/components/molecules/Navbar";
 
 const unbounded = Albert_Sans({
   subsets: ["latin"],
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={unbounded.className}>
+        <Navbar />
         <main className="antialiased">{children}</main>
         <Footer />
       </body>
