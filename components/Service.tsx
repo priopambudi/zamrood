@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import CardService from "./CardService";
+import CardService from "./molecules/CardService";
 import { dataHome } from "@/data/dataHome";
 import tailor from "@/public/img/tailored.png";
 import Button from "./ui/Button";
@@ -10,7 +10,7 @@ import { Separator } from "./ui/Separator";
 const Priority = () => {
   return (
     <section id="priority" className="container px-4 sm:px-6 mx-auto">
-      <div className="mb-custom">
+      <div className="mt-custom">
         <h2 className="font-unbounded text-xl md:text-3xl font-bold text-center uppercase text-secondary-text">
           Elevate your experience
         </h2>

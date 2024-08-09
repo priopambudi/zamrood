@@ -11,6 +11,7 @@
   --primary-text: 255, 255, 255;
   --secondary-text: 0, 64, 64;
   --tertiary-text: 11, 115, 115;
+  --muted-text: 184, 184, 184;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -18,3 +19,9 @@
     --background: 255, 255, 255;
   }
 } */
+
+/* Card Destination */
+#cardlist .img-wrap img,
+#cardscroll .img-wrap img {
+  object-position: 100% 100%;
+}
