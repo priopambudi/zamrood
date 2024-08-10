@@ -26,7 +26,7 @@ const CardArticle = ({ article, indx }: CardArticleProps) => {
           alt={article.title}
           width={500}
           height={300}
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-center grayscale hover:grayscale-0 hover:scale-125 transition-all duration-500"
         />
       </div>
       <div className="w-full p-4 md:p-2 lg:p-4 bg-tertiary-text">

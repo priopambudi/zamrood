@@ -8,9 +8,9 @@ const galleries = [
   "https://www.zamrood.com/_next/image?url=%2Fimages%2Ffootages%2Ffootage-1.webp&w=1920&q=75",
   "https://www.zamrood.com/_next/image?url=%2Fimages%2Ffootages%2Ffootage-2.jpg&w=1920&q=75",
   "https://www.zamrood.com/_next/image?url=%2Fimages%2Ffootages%2Ffootage-3.webp&w=1920&q=75",
-  "https://www.zamrood.com/_next/image?url=%2Fimages%2Ffootages%2Ffootage-1.webp&w=1920&q=75",
-  "https://www.zamrood.com/_next/image?url=%2Fimages%2Ffootages%2Ffootage-2.jpg&w=1920&q=75",
-  "https://www.zamrood.com/_next/image?url=%2Fimages%2Ffootages%2Ffootage-3.webp&w=1920&q=75",
+  "https://www.zamrood.com/_next/image?url=%2Fimages%2Ffootages%2Ffootage-4.jpg&w=3840&q=75",
+  "https://www.zamrood.com/_next/image?url=%2Fimages%2Ffootages%2Ffootage-5.jpg&w=3840&q=75",
+  "https://www.zamrood.com/_next/image?url=%2Fimages%2Ffootages%2Ffootage-6.jpg&w=3840&q=75",
 ];
 
 const Gallery = () => {
