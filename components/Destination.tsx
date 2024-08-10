@@ -37,6 +37,7 @@ const Destination = () => {
           <CardDestination.list
             key={data.itinerary_id}
             image={data.related_galleries[0].src}
+            images={data.related_galleries}
             days={data.itinerary_day}
             title={data.itinerary_name}
             description={data.itinerary_short_description}

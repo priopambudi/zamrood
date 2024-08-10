@@ -1,10 +1,18 @@
 import { cn } from "@/lib/utils";
 import Image, { StaticImageData } from "next/image";
 import Button from "../ui/Button";
+import Slider from "./Slider";
 
 interface CradProps {
   image?: string | StaticImageData;
-  images?: string[];
+  images?: {
+    itinerary_id: string;
+    gallery_id: number;
+    gallery_alt_text: string;
+    gallery_path: string;
+    src: string;
+    title: string;
+  }[];
   days: number;
   title: string;
   organizer: string;
@@ -16,7 +24,6 @@ interface CradProps {
 
 export const CardDestination = {
   list: ({
-    image = "",
     days,
     title,
     organizer,
@@ -24,6 +31,7 @@ export const CardDestination = {
     price,
     discprice,
     direction,
+    images = [],
   }: CradProps) => (
     <div id="cardlist" className="md:py-custom">
       <div
@@ -34,12 +42,9 @@ export const CardDestination = {
       >
         {direction === "left" && (
           <div className="img-wrap w-full h-64 md:h-full md:w-1/2">
-            <Image
-              src={image}
-              alt={title}
-              width={500}
-              height={300}
-              className="w-full h-full object-cover"
+            <Slider
+              images={images}
+              delay={Math.floor(Math.random() * (4000 - 3000 + 1) + 4000)}
             />
           </div>
         )}
@@ -84,14 +89,8 @@ export const CardDestination = {
           </div>
         </div>
         {direction === "right" && (
-          <div className="img-wrap w-full  h-64 md:h-full md:w-1/2">
-            <Image
-              src={image}
-              alt={title}
-              width={500}
-              height={300}
-              className="w-full h-full object-cover"
-            />
+          <div className="img-wrap w-full h-64 md:h-full md:w-1/2">
+            <Slider images={images} />
           </div>
         )}
       </div>
