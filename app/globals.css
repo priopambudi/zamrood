@@ -21,6 +21,7 @@
   --muted-text: 184, 184, 184;
 
   --gold: 214, 182, 107;
+  --h-header: 50px;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -29,8 +30,16 @@
   }
 } */
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply bg-background;
+}
+
+#discover {
+  scroll-margin-top: calc(var(--h-header) + 2.5em);
 }
 
 /* Card Destination */

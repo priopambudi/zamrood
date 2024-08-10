@@ -16,15 +16,13 @@ export default function Navbar() {
   const [scroll, setScroll] = useState(false);
   const menus = [
     { title: "Homepage", path: "/" },
-    { title: "Customize Your Trip", path: "/" },
+    { title: "Customize Your Trip", path: "#discover" },
     { title: "Destination", path: "/" },
     { title: "Article", path: "/" },
     { title: "Article", path: "/", type: "btn" },
   ];
 
   const handleScroll = () => {
-    const navEl = document.querySelector("nav");
-
     if (window.scrollY > 70) {
       setScroll(true);
     } else {
@@ -84,7 +82,7 @@ export default function Navbar() {
                   <li
                     key={idx}
                     className={cn(
-                      "font-bold p-4 text-secondary-text",
+                      "font-bold p-4 text-secondary-text hover:border-b-2 hover:border-b-tertiary-text transition-all cursor-pointer",
                       scroll ? "text-secondary-text" : "text-white"
                     )}
                   >

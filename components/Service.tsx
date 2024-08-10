@@ -9,7 +9,7 @@ import { Separator } from "./ui/Separator";
 
 const Priority = () => {
   return (
-    <section id="priority" className="container px-4 sm:px-6 mx-auto">
+    <section id="services" className="container px-4 sm:px-6 mx-auto">
       <div className="mt-custom">
         <h1 className="font-the-signature text-secondary-text text-[54px] lg:text-[85px] text-center -mb-7">
           Beyond Premium
@@ -27,7 +27,10 @@ const Priority = () => {
             />
           ))}
         </div>
-        <div className="flex flex-col flex-wrap md:flex-row md:my-custom mt-14 items-center justify-center md:justify-center md:gap-6">
+        <div
+          id="discover"
+          className="flex flex-col flex-wrap md:flex-row md:my-custom mt-14 items-center justify-center md:justify-center md:gap-6"
+        >
           <div className="tailored-wrap h-44 md:h-80">
             <Image
               src={tailor}
