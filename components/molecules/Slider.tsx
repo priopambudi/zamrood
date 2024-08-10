@@ -60,7 +60,7 @@ const Slider = ({ images = [], imgstring = [], delay = 2500 }: props) => {
         <Image
           key={img.gallery_id}
           src={img.src}
-          alt={img.gallery_alt_text}
+          alt={img.title}
           width={500}
           height={300}
           className={cn(

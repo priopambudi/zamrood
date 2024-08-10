@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn, formatPrice } from "@/lib/utils";
 import Image, { StaticImageData } from "next/image";
 import Button from "../ui/Button";
 import Slider from "./Slider";
@@ -74,10 +74,10 @@ export const CardDestination = {
                 Start from
               </p>
               <p className="font-bold text-muted-text -my-2 line-through hidden md:block">
-                IDR {discprice}
+                IDR {formatPrice(discprice || "0")}
               </p>
               <p className="font-semibold text-lg md:text-3xl text-tertiary-text">
-                IDR {price}
+                IDR {formatPrice(price)}
               </p>
             </div>
             <Button
@@ -90,7 +90,10 @@ export const CardDestination = {
         </div>
         {direction === "right" && (
           <div className="img-wrap w-full h-64 md:h-full md:w-1/2">
-            <Slider images={images} />
+            <Slider
+              images={images}
+              delay={Math.floor(Math.random() * (4000 - 3000 + 1) + 4000)}
+            />
           </div>
         )}
       </div>
@@ -115,13 +118,15 @@ export const CardDestination = {
         <h3 className="font-bold font-unbounded text-base line-clamp-2 text-tertiary-text">
           {title}
         </h3>
-        <p className="text-sm text-secondary-text uppercase">
+        <p className="text-sm text-secondary-text font-bold">
           Organized by {organizer}
         </p>
       </div>
       <div className="price-wrap">
         <p className="text-xs text-secondary-text">Start from</p>
-        <p className="text-secondary-text font-bold text-base">IDR {price}</p>
+        <p className="text-secondary-text font-bold text-base">
+          IDR {formatPrice(price)}
+        </p>
       </div>
       <Button
         type="outline"
