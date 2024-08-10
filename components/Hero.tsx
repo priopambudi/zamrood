@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import Button from "@/components/ui/Button";
 
@@ -7,10 +8,22 @@ import hero from "@/public/img/hero.jpeg";
 import Container from "./ui/Container";
 
 const Hero = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <section
       id="hero"
-      className="relative flex place-items-center h-screen sm:h-[756px] lg:h-[810px]"
+      className="relative flex place-items-center h-screen sm:h-[756px] lg:h-[810px] overflow-hidden"
     >
       <Image
         src={hero}
@@ -18,6 +31,7 @@ const Hero = () => {
         fetchPriority="high"
         fill
         className="absolute h-full w-full z-0 object-cover"
+        style={{ transform: `translateY(${scrollY * 0.5}px)` }}
       />
       <Container className="hero-description absolute inset-x-0 py-52 w-full max-w-7xl mx-auto text-center lg:text-left">
         <h2 className="font-the-signature text-gold text-[86px] w-max text-center md:text-left whitespace-nowrap -mb-11">
