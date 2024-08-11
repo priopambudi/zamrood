@@ -49,7 +49,7 @@ well, its simply because this is travel website. It's important for travel websi
 
 ## How about the performance?
 
-Every website need performance because if the website load more than 10 seconds, user will be go away ☠️
+Every website need performance because if the website load more than 10 seconds, user will go away ☠️
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/fa9c5ecd-079e-4b9e-aa33-c68645a79f9d">
 
