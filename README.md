@@ -46,3 +46,11 @@ well, its simply because this is travel website. It's important for travel websi
     <img width="328" alt="image" src="https://github.com/user-attachments/assets/d9671e45-6646-4cc7-bd90-399c5b4c5d55">
 
 - **built my own slideshow**. I know this is something easy to do, but not everyone is willing to do it. Most of them prefer using libraries, even though it can affect performance.
+
+## How about the performance?
+
+Every website need performance because if the website load more than 10 seconds, user will be go away ☠️
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/fa9c5ecd-079e-4b9e-aa33-c68645a79f9d">
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/018d14d7-c116-4cf3-9b9c-21b9ac1e3380">
