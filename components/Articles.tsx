@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 
 import { articlesData } from "@/interfaces/GeneralTypes";
 import CardArticle from "./molecules/CardArticle";
-import { cn } from "@/lib/utils";
 
 const Articles = () => {
   const [articles, setArticles] = useState<articlesData[] | []>([]);

@@ -3,9 +3,9 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 import Button from "@/components/ui/Button";
+import Container from "@/components/ui/Container";
 
 import hero from "@/public/img/hero.jpeg";
-import Container from "./ui/Container";
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
